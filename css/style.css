@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-midnight {
+  background: rgb(20, 20, 20);
+}
+
+.bg-clouds {
+  background: #ecf0f1;
+}
+
+.text-midnight {
+  color: #2c3e50;
+}
+
+.text-clouds {
+  color: #ecf0f1;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 0;
+}
+
+.height-full {
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Mono", monospace;
+  /* text-transform: uppercase; */
+}
+
+#socmed-nav {
+  position: fixed;
+  height: 100vh;
+  right: 0px;
+  width: 30px;
+  background-color: rgb(250, 250, 250);
+  z-index: 999;
+  transition: 0.5s;
+}
+
+#socmed-nav:hover {
+  width: 80px;
+  transition: 0.5s;
+}
+
+#socmed-nav #socmed-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#socmed-nav #socmed-ul:first-child {
+  margin-top: 200px;
+}
+
+#socmed-nav #socmed-ul li {
+  padding-bottom: 20px;
+}
+
+#socmed-nav #socmed-ul li a {
+  color: #919191;
+}
+
+#socmed-nav #socmed-ul li a:hover {
+  color: #2c3e50;
+}
+
+#socmed-nav li i {
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+#socmed-nav:hover li i {
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+#photoDiv {
+  position: relative;
+}
+
+#myGallery {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ecf0f1;
+  z-index: 9999;
+  transition: 0.3s;
+}
+
+#myGallery i {
+  padding-left: 10px;
+  padding-top: 8px;
+  font-size: 1.5rem;
+}
+
+#myGallery ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#myGallery ul li {
+  padding: 8px 0;
+  font-size: 1.1rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+#myGallery ul li:hover {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  cursor: pointer;
+}
+
+#myGallery:hover {
+  width: 100px;
+  height: auto;
+  transition: 0.3s;
+}
+
+#myGallery:hover i {
+  display: none;
+}
+
+#myGallery:hover ul {
+  display: block;
+}
+
+#photoDiv #contact-group {
+  /* padding-left: 25px; */
+  margin-top: 80vh;
+  font-size: 1.5rem;
+}
+
+#photoDiv #contact-group i {
+  padding-top: 15px;
+  font-size: 2rem;
+  transition: 0.4s;
+  font-size: 3rem;
+}
+
+#contact-group i:hover {
+  cursor: pointer;
+  color: #919191;
+  transition: 0.4s;
+}
+
+.photo-0 {
+}
+
+.photo-1 {
+  background: url("../img/photo-1.png");
+  width: 350px;
+  height: 350px;
+  top: 100px;
+  left: 120px;
+  border: white solid 10px;
+}
+
+.photo-2 {
+  background: url("../img/photo-2.png");
+  width: 300px;
+  height: 450px;
+  top: 50px;
+  left: 160px;
+  border: white solid 10px;
+}
+
+.photo-3 {
+  background: url("../img/photo-3.png") center;
+  width: 450px;
+  height: 180px;
+  top: 300px;
+  left: 50px;
+  border: white solid 10px;
+}
+
+.photo-4 {
+  background: url("../img/photo-4.png") center;
+  width: 450px;
+  height: 300px;
+  top: 200px;
+  left: 50px;
+  border: white solid 10px;
+}
+
+#photo {
+  position: absolute;
+  /* background-position: bottom; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 998;
+  /* top: 100px;
+  left: 200px; */
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.content {
+  height: 85%;
+  /* margin-bottom: 40px; */
+}
+
+.content .tab-pane {
+  height: 100%;
+}
+
+.myNav {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.myNav li a i {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 2.2rem;
+  transition: 0.4s;
+}
+
+.myNav li a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.navLink {
+  width: 120px;
+}
+
+.nav-pills li a {
+  color: rgb(192, 192, 192);
+}
+
+.nav-pills li a.active,
+.nav-pills li a:hover,
+.nav-pills li a:focus {
+  color: rgb(20, 20, 20) !important;
+  background-color: #ecf0f1 !important;
+  transition: 0.4s;
+}
+
+.nav-pills li a.active i,
+.nav-pills li a:hover i,
+.nav-pills li a:focus i {
+  border-top: #2c3e50 solid 4px;
+  transition: 0.4s;
+}
+
+#hello {
+  width: 100%;
+  height: 100%;
+}
+
+#hello .banner {
+  width: 100%;
+  padding-left: 5vw;
+  padding-top: 30vh;
+}
+
+#hello #title,
+#hello #subtitle {
+  font-weight: 200;
+}
+
+#hello #title {
+  font-size: 3.5rem;
+}
+
+#hello #subtitle {
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+}
+
+#hello #subtitle span {
+  color: #2c3e50;
+}
+
+#hello .txt {
+  border-right: solid #2c3e50 0.1rem;
+}
+
+#about {
+  width: 100%;
+  height: 100%;
+  background: url("img/white4.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about h1 {
+  padding-top: 120px;
+  font-size: 2.5rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2.5rem;
+}
+
+#experience {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#experience .tulisan {
+  color: #000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80%;
+}
+
+#experience .tulisan h1 {
+  font-size: 2.5rem;
+  padding-bottom: 25px;
+}
+
+#experience .tulisan p {
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#experience .exTitle {
+  padding-bottom: 25px;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+#experience img {
+  width: 150px;
+}
+
+#experience p {
+  padding-top: 20px;
+}
+
+#education {
+  height: 100vh;
+  width: 100%;
+  padding-top: 10vh;
+}
+
+#education .myEdu-list {
+  margin-right: 6px;
+  height: 60%;
+  overflow-y: scroll;
+}
+
+#education .myEdu {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+#education .myDept {
+  font-size: 1.2rem;
+  color: #9c9c9c;
+}
+
+#skills {
+  height: 100vh;
+  padding-top: 10vh;
+  width: 100%;
+  color: #2c3e50;
+}
+
+#skills ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#skills .progIcon {
+  font-size: 4rem;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+#interests {
+  width: 100%;
+  height: 100%;
+}
+
+#interests h1 {
+  padding-top: 120px;
+  font-size: 2.5rem;
+}
+
+#interests p {
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2.5rem;
+}
+
+#contact {
+  position: relative;
+}
+
+#contact h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-top: 80px;
+}
+
+#contact i#up-arrow-icon {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  font-size: 3rem;
+  transition: 0.4s;
+}
+
+#contact i#up-arrow-icon:hover {
+  cursor: pointer;
+  color: #919191;
+  transition: 0.4s;
+}
+
+#contact hr {
+  height: 2px;
+  width: 70%;
+}
+
+#contact .mybtn {
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: 50%;
+  box-sizing: border-box;
+  border: #ecf0f1 solid 2px;
+  height: 40px;
+}
+
+#contact .mybtn:hover {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: #2c3e50 solid 2px;
+}
+
+#contact .detail-icon {
+  font-size: 2rem;
+}
